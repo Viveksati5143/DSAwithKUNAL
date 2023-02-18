@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Conditionals and Loops/Conditionals and Loops.iml" filepath="$PROJECT_DIR$/Conditionals and Loops/Conditionals and Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSAwithKunal.iml" filepath="$PROJECT_DIR$/.idea/DSAwithKunal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intro to Java/Intro to Java.iml" filepath="$PROJECT_DIR$/Intro to Java/Intro to Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Switch/Switch.iml" filepath="$PROJECT_DIR$/Switch/Switch.iml" />
+    </modules>
+  </component>
+</project>
