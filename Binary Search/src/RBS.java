@@ -1,8 +1,9 @@
 public class RBS {
     public static void main(String[] args) {
-        int[] arr = {4,5,6,7,0,1,2};
-        int target = 4;
-        System.out.println(search(arr,target));
+//        int[] arr = {4,5,6,7,0,1,2};
+        int[] arr = {4,4,5,6,7,0,1,1,2};
+        int target = 1;
+        System.out.println(search2(arr,target));
     }
 
     static int search(int[] nums, int target){
@@ -11,6 +12,13 @@ public class RBS {
         if (nums[pivot]==target) return pivot;
         if (target >= nums[0]) return binarySearch(nums,target,0,pivot-1);
         return binarySearch(nums,target,pivot+1,nums.length-1);
+    }
+    static int search2(int[] nums, int target){
+        int pivotwithDupli = pivotWithDuplicates(nums);
+        if(pivotwithDupli == -1) return binarySearch(nums,target,0,nums.length-1);
+        if (nums[pivotwithDupli]==target) return pivotwithDupli;
+        if (target >= nums[0]) return binarySearch(nums,target,0,pivotwithDupli-1);
+        return binarySearch(nums,target,pivotwithDupli+1,nums.length-1);
     }
     static int pivot(int[] arr){
         int start = 0;
@@ -24,15 +32,21 @@ public class RBS {
         }
         return -1;
     }
-    static int pivotWithDuplicates(int[] arr){
+    static int pivotWithDuplicates(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
-        while(start<=end){
-            int mid = start + (end-start)/2;
-            if(mid>start && arr[mid]<arr[mid-1]) return mid -1;
-            if(mid<end && arr[mid]>arr[mid+1]) return mid;
-            if(arr[mid]<=arr[start]) end = mid-1;
-            else start = mid+1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (mid > start && arr[mid] < arr[mid - 1]) return mid - 1;
+            if (mid < end && arr[mid] > arr[mid + 1]) return mid;
+//            if elements at the start, mid, end are equal then skip the duplicates
+            if (arr[mid] == arr[start] && arr[mid] == arr[end]) {
+                if (arr[start] > arr[start + 1]) return start;
+                start++;
+                if (arr[end] < arr[end - 1]) return end - 1;
+                end--;
+            } else if (arr[start]<arr[mid] || arr[start]==arr[mid] && arr[mid]>arr[end]) start = mid + 1;
+            else end = mid - 1;
         }
         return -1;
     }
