@@ -10,7 +10,7 @@ public class RBS {
         if(arr[m]==target) return m;
         if(arr[s]<=arr[m]){
             if(target>=arr[s] && target<=arr[m]) search(arr,target,s,m-1);
-            else return search(arr, target, m+1,e);
+            else return search(arr, target, m+1, e);
         }
         if(target>=arr[m] && target<=arr[e]) return search(arr, target,m+1,e);
         return search(arr, target, s, m-1);
