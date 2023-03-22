@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/Switch/Switch.iml" filepath="$PROJECT_DIR$/Switch/Switch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/arrays/arrays.iml" filepath="$PROJECT_DIR$/Recursion/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/patterns/patterns.iml" filepath="$PROJECT_DIR$/Recursion/patterns/patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/sorting/sorting.iml" filepath="$PROJECT_DIR$/Recursion/sorting/sorting.iml" />
     </modules>
   </component>
 </project>
