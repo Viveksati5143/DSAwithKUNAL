@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment/Assignment.iml" filepath="$PROJECT_DIR$/Assignment/Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/Backtracking/Backtracking.iml" filepath="$PROJECT_DIR$/Recursion/Backtracking/Backtracking.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Binary Search/Binary Search.iml" />
       <module fileurl="file://$PROJECT_DIR$/Math/Bitwise/Bitwise.iml" filepath="$PROJECT_DIR$/Math/Bitwise/Bitwise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conditionals and Loops/Conditionals and Loops.iml" filepath="$PROJECT_DIR$/Conditionals and Loops/Conditionals and Loops.iml" />
