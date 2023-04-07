@@ -63,15 +63,15 @@ public class Maze {
         ArrayList<String> list = new ArrayList<>();
 
         if (r > 1 && c > 1) {
-            list.addAll(pathRetDiagonal(p + 'D', r-1, c-1));
+            list.addAll(pathRetDiagonal(p + 'D', r-1, c-1)); // Diagonally
         }
 
         if (r > 1) {
-            list.addAll(pathRetDiagonal(p + 'V', r-1, c));
+            list.addAll(pathRetDiagonal(p + 'V', r-1, c)); // Vertically
         }
 
         if (c > 1) {
-            list.addAll(pathRetDiagonal(p + 'H', r, c-1));
+            list.addAll(pathRetDiagonal(p + 'H', r, c-1)); // Horizontally
         }
         return list;
     }
