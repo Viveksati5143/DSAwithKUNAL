@@ -126,7 +126,16 @@ public class LL {
         }
         return node;
     }
-
+    private void reverse(Node node){
+        if(node==tail){
+            head = tail;
+            return;
+        }
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
 
     private class Node{
         private int value;
